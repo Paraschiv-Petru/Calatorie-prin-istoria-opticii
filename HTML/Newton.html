@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Newton</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+
+
+
+<body>
+    <main>
+    <header>
+        <h1>Isaac Newton</h1>
+        <div id="hamburger-menu-container">
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Simbolul hamburger -->
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../Acasă.html">Acasă</a></li>
+                    <li><a href="Newton.html">Isaac Newton</a></li>
+                    <li><a href="Huygens.html">Huygens</a></li>
+                    <li><a href="Young.html">Young</a></li>
+                    <li><a href="Maxwell.html">Maxwell</a></li>
+                    <li><a href="Surse.html">Surse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <section>
+        <h1>
+            🔹 Teoria corpusculară a luminii
+        </h1>
+        <p>
+            Newton a considerat lumina alcătuită din particule numite corpusculi, care se deplasează în linie dreaptă. 
+            Această teorie explica bine reflexia și refracția, dar nu putea justifica interferența sau difracția.
+        </p>
+        <h1>
+            🔹 Dispersia luminii
+        </h1>
+        <p>
+            Folosind o prismă, Newton a demonstrat că lumina albă este compusă din mai multe culori, care se refractă diferit.
+            A realizat celebrul experiment în care a separat lumina în culorile curcubeului și le-a recombinat 
+            pentru a recrea lumina albă.
+        </p>   
+        
+        <div id="dispersie-container">
+        <div id="light-beam" title="Trage fasciculul alb spre prismă pentru dispersie"></div>
+        <div id="prism"></div>
+        <div id="rainbow">
+            <div title="Violet ~ 400 nm"></div>
+            <div title="Albastru ~ 470 nm"></div>
+            <div title="Verde ~ 520 nm"></div>
+            <div title="Galben ~ 580 nm"></div>
+            <div title="Portocaliu ~ 620 nm"></div>
+            <div title="Roșu ~ 700 nm"></div>
+        </div>
+        </div>
+
+        
+        <h1>
+            🔹 Lucrarea „Opticks” (1704)
+        </h1>
+        <p>
+            🔹 Experimente despre refracție și reflexie: Newton a studiat cum se comportă lumina atunci când trece 
+            dintr-un mediu în altul (de exemplu, din aer în apă) și a formulat legi pentru reflexia și refracția luminii.
+        </p>
+
+          <div class="main-layout">
+                <div id="canvas-container"></div>
+
+                <div id="controls">
+                <label>Unghi de incidență: <span id="angleValue">30</span>°</label><br>
+                <input type="range" id="angleSlider" min="0" max="90" value="30">
+
+                <br><br>
+                <label>Indice n1 (ex: aer = 1): <span id="n1Value">1.0</span></label><br>
+                <input type="range" id="n1Slider" min="1.0" max="2.5" step="0.01" value="1.0">
+
+                <br><br>
+                <label>Indice n2 (ex: apă = 1.33): <span id="n2Value">1.5</span></label><br>
+                <input type="range" id="n2Slider" min="1.0" max="2.5" step="0.01" value="1.5">
+                </div>
+            </div>
+        <p>🔴 Raza incidentă — raza care vine din mediul n1 și lovește suprafața.<br>🔵 Raza reflectată — raza care se reflectă înapoi în același mediu (n1), conform legii reflexiei.
+            <br>🟢 Raza refractată — raza care pătrunde în al doilea mediu (n2) și își schimbă direcția conform legii lui Snell.
+        </p>
+
+        <p>
+            🔹 Teoria culorilor: Newton a demonstrat că lumina albă este compusă din mai multe culori distincte, 
+            care pot fi separate cu ajutorul unei prisme. A subliniat că culoarea este o proprietate a luminii, 
+            nu a obiectului.
+        </p>
+        <button onclick="initColorTheory()">Vezi demonstrația</button>
+        <div id="color-theory-container">
+            <div id="white-light">Lumină albă</div>
+            <div id="prism-color"></div>
+            <div id="spectrum">
+                <span class="color" style="background: violet;"></span>
+                <span class="color" style="background: indigo;"></span>
+                <span class="color" style="background: blue;"></span>
+                <span class="color" style="background: green;"></span>
+                <span class="color" style="background: yellow;"></span>
+                <span class="color" style="background: orange;"></span>
+                <span class="color" style="background: red;"></span>
+            </div>
+            <div id="caption">🔍 Culoarea este o proprietate a luminii, nu a obiectului.</div>
+        </div>
+        <br>
+        <p>
+            🔹 Inelurile lui Newton: A studiat interferența luminii reflectate de suprafețe subțiri 
+            (cum ar fi un strat de aer între o lentilă convexă și o placă de sticlă), formând ceea ce
+            azi numim inele de interferență sau inele Newton.
+        </p>
+    
+        <p>
+            🔹 Corpurile ca emițători de corpusculi: În lucrare, Newton dezvoltă teoria corpusculară a luminii, 
+            susținând că lumina este formată din mici particule (corpusculi) care se propagă rectiliniu.
+        </p>
+    </section>
+    </main>
+    <script src="../JS/script-meniu.js"></script>
+    <script src="../JS/dispersie.js"></script>
+
+    
+
+    <footer>
+        <p>Călătorie prin istoria opticii</p>
+    </footer>
+
+</body>
+</html>
