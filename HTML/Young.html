@@ -36,34 +36,72 @@
     
 
     <section>
-        <script src="../JS/script-meniu.js"></script>
+        
 
         <h1>
             🔹 Experimentul cu fante duble (1801)
         </h1>
+        
+
         <p>
             Young a demonstrat prin celebrul său experiment că lumina produce interferență – un fenomen specific undelor. 
             Prin trecerea luminii prin două fante înguste, pe un ecran apăreau zone luminoase și întunecate, 
             dovedind natura ondulatorie a luminii.
+        
+
+        <a href="https://www.scientia.ro/fizica/50-mecanica-cuantica/9054-experimentul-cu-doua-fante-al-lui-thomas-young-o-poarta-catre-lumea-cuantica.html" target="_blank" rel="noopener noreferrer">
+            (Citește mai mult)
+        </a>
         </p>
         <h1>
             🔹 Măsurarea lungimilor de undă
         </h1>
+
+
         <p>
             Young a calculat aproximativ lungimile de undă pentru diferite culori ale luminii. 
             Aceste rezultate au fost extrem de apropiate de valorile acceptate în prezent.
-        </p>   
+        </p>
+        <div id="app-lungime-unda">
+            <h1>Măsurarea Lungimii de Undă</h1>
+
+            <div class="controls">
+            <label for="frequency">Frecvență (Hz): <span id="freqVal">5</span></label>
+            <input type="range" id="frequency" min="1" max="20" value="5">
+            </div>
+
+            <div class="controls">
+            <label for="speed">Viteză undei (m/s): <span id="speedVal">340</span></label>
+            <input type="range" id="speed" min="100" max="1000" value="340">
+            </div>
+
+            <div class="output">
+            <p>Lungimea de undă (λ): <strong id="wavelength">68.00</strong> metri</p>
+            </div>
+
+            <canvas id="waveCanvas"></canvas>
+        </div>
+
+        
+   
         <h1>
             🔹 Teoria vederii
         </h1>
         <p>
             A propus o teorie conform căreia retina umană conține trei tipuri de receptori pentru culori, 
             ceea ce a pus bazele teoriei tricomponente a percepției cromatice.
-        </p>  
+        <a href="https://www.scientia.ro/homo-humanus/107-introducere-in-psihologie-de-russ-dewey/5851-vederea-cromatica-teorii.html" target="_blank" rel="noopener noreferrer">
+            (Citește mai mult)
+        </a>
+        </p> 
+
     </section>
     </main>
-    
 
+
+    <script src="../JS/script-meniu.js"></script>
+    <script src="../JS/unde.js"></script>
+    
     <footer>
         <p>Călătorie prin istoria opticii</p>
     </footer>

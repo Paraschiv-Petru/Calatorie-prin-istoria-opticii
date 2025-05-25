@@ -411,4 +411,74 @@ canvas {
 }
 
 
+/*Huygens__*/
+
+#app-lungime-unda {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ==== TITLU PRINCIPAL ==== */
+#app-lungime-unda h1 {
+  margin-bottom: 20px;
+}
+
+/* ==== CONTROALE ==== */
+#app-lungime-unda .controls {
+  margin: 15px 0;
+}
+
+#app-lungime-unda label {
+  font-weight: bold;
+}
+
+/* ==== OUTPUT LAMBDA ==== */
+#app-lungime-unda .output {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* ==== CANVAS UNDA ==== */
+#app-lungime-unda canvas {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 200px;
+}
+
+
+.pergament {
+  background: #fdf6e3;            /* culoare deschisă, pergament */
+  border: 2px solid #d1c4a1;     /* bordură subtilă, asemănătoare cu marginea unui pergament */
+  border-radius: 12px;            /* colțuri rotunjite */
+  padding: 25px 30px;             /* spațiu interior */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* umbră fină pentru volum */
+  max-width: 400px;               /* lățime maximă */
+  font-family: "Georgia", serif; /* font serif, elegant, tipic pergamentului */
+  color: #5a4a24;                /* text maroniu închis */
+  margin: 20px auto;              /* margini și centrare */
+}
+
+.pergament h2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #6b5e35;
+}
+
+.pergament a {
+  display: block;                /* linkuri pe rânduri separate */
+  color: #7a6b33;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.pergament a:hover,
+.pergament a:focus {
+  color: #b2953a;               /* schimbare culoare la hover/focus */
+  text-decoration: underline;
+}
 
